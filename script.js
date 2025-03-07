@@ -1,7 +1,25 @@
 // complete this js code
-function Person(name, age) {}
+class Person {
+	constructor(name,age){
+		this.name=name
+		this.age=age
+	}
+	greet(){
+		console.log(`Hello my name is ${this.name}, I am ${this.age} year old.`)
+	}
+}
 
-function Employee(name, age, jobTitle) {}
+class Employee extends Person{
+	constructor(name,age,jobTitle){
+	super(this.name)
+	super(this.age)
+	this.jobTitle=jobTitle
+	}
+	super.greet()
+	jobGreet(){
+			console.log(`Hello, my name is ${this.name}, I am ${this.age} years old, and my jon title is ${this.jobTitle}.`)
+	}
+}
 
 // Do not change code below this line
 window.Person = Person;
