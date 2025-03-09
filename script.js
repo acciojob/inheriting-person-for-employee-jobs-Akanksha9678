@@ -14,7 +14,6 @@ class Employee extends Person{
 	super(name,age)
 	this.jobTitle=jobTitle
 	}
-	super.greet()
 	jobGreet(){
 			console.log(`Hello, my name is ${this.name}, I am ${this.age} years old, and my jon title is ${this.jobTitle}.`)
 	}
